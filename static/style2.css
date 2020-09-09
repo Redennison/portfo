@@ -1,0 +1,125 @@
+body {
+	background-image: url(./assets/wintry.png);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.giant-container {
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 1000px; 
+	padding: 40px;
+	border-radius: 4px;
+	background-color: white;
+	visibility: visible;
+}
+
+.button-container {
+	margin: auto 20px auto auto;
+	padding: 20px 65px;
+}
+
+.title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5rem;
+}
+
+.message-contain {
+	display: flex;
+	align-items: center;
+	margin: 0px 30px;
+}
+
+.sent-message {
+	margin-left: 75px;
+	top: 10px;
+	font-family: 'Baloo Tamma 2', cursive;
+	color: grey;
+}
+
+button {
+	margin: auto;
+	background-color: #4caf50;
+	color: #fff;
+	padding: 9px 18px;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	font-family:'Baloo Tamma 2', cursive;
+}
+
+button:hover {
+	background-color: green;
+}
+
+@media (min-width: 1126px) {
+	.giant-container {
+		width: 1000px;
+	}
+	.button-container {
+		margin: auto 20px auto auto;
+	}
+	.sent-message {
+		margin-left: 75px;
+		padding: 0px;
+	}
+}
+
+@media (max-width: 1125px)  and (min-width: 875px) {
+	.giant-container {
+		max-width: 750px;
+	}
+	.button-container {
+		margin: auto -25px auto auto;
+		padding: 20px 30px;
+	}
+	.sent-message {
+		padding: 0px;
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 874px) and (min-width: 625px) {
+	.giant-container {
+		max-width: 500px;
+	}
+	.button-container {
+		margin: auto;
+		padding: 0px 221px;
+	}
+	.sent-message {
+		padding: 20px;
+		margin-left: 0px;
+	}
+	.message-contain {
+		display: block;
+		margin: auto;
+	}
+}
+
+@media (max-width: 624px) {
+	.giant-container {
+		max-width: 200px;
+	}
+	.button-container {
+		margin: auto;
+		padding: 0px 71px;
+	}
+	.sent-message {
+		padding: 20px 0px;
+		margin-left: 0px;
+	}
+	.message-contain {
+		display: block;
+		margin: auto;
+	}
+}
+

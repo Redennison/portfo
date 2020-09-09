@@ -1,0 +1,292 @@
+body {
+	background-image: url(./assets/wintry.png);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1, .welcome {
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+@keyframes fade {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+h1 {
+	opacity: 1;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 0px;
+	margin-top: 100px;
+}
+
+.welcome {
+	opacity: 1;
+	font-size: 1.4rem;
+	color: white;
+	text-align: center;
+	font-family: cursive;
+	margin-top: 0px;
+	margin-bottom: 75px;
+}
+
+#about-me {
+	opacity: 1;
+	animation-name: aboutme;
+	animation-duration: 0.3s;
+}
+
+@keyframes aboutme {
+	from {opacity:0;padding:5px;}
+	to {opacity:1;padding:40px;}
+}
+
+#projects {
+	opacity: 1;
+	animation-name: project;
+	animation-duration: 0.4s;
+}
+
+@keyframes project {
+	0% {opacity:0;padding:5px;}
+	25% {opacity:0;padding:5px;}
+	100%{opacity:1;padding:40px;}
+}
+
+.project-carousel {
+	margin: -30px auto 30px auto;
+	padding-bottom: 100px;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+}
+
+.project-indicator {
+
+}
+
+.project-caption {
+	position: relative
+	left: auto;
+	right: auto;
+	height: auto;
+	font-size: 18px;
+	padding-bottom: 5px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#skiing {
+	opacity: 0;
+	animation-name: sport;
+	animation-duration: 0.5s;
+}
+
+.carousel {
+	padding: 35px 10px 10px 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	top: 10% !important;
+	bottom: 16% !important;
+}
+
+.carousel-caption {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-item video:focus {
+	outline: none;
+}
+
+@keyframes sport {
+	0% {opacity:0;padding:5px;}
+	40% {opacity:0;padding:5px;}
+	100% {opacity:1;padding:40px;}
+}
+
+#contact-me {
+	opacity: 1;
+	animation-name: contact;
+	animation-duration: 0.6s;
+}
+
+@keyframes contact {
+	0% {opacity:0;padding:5px;}
+	50% {opacity:0;padding:5px;}
+	100% {opacity:1;padding:40px;}
+}
+
+#about-me, #projects, #skiing, #contact-me, .vid-carousel {
+	max-width: 1075px; 
+	border-radius: 4px;
+	background-color: white;
+	padding: 40px;
+	margin: 35px auto;
+}
+
+#skiing {
+	opacity: 1;
+	animation-name: sport;
+	animation-duration: 0.5s;
+}
+
+.titles {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5rem;
+}
+
+#container {
+	display: flex;
+	align-items: center;
+}
+
+#about-me-text {
+	font-family: 'Baloo Tamma 2', cursive;
+	color: grey;
+}
+
+@media (min-width: 1215px) {
+	.about-me-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#about-me-image img {  
+		height: 276px;
+		width: 368px;
+		padding: 20px;
+		float: left;
+	}
+	#about-me-text {
+		padding: 15px;
+	}
+	.carousel-caption {
+		font-size: 40px;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		top: 10% !important;
+		bottom: 16% !important;
+	}
+}
+
+@media (max-width: 1214px) and (min-width: 988px) {
+	#about-me, #projects, #skiing, #contact-me {
+		max-width: 880px;
+	}
+	.about-me-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#about-me-text {
+		padding: 15px;
+	}
+	#ab-image {
+		display: none;
+	}
+	#about-me-image img {
+		height: 276px;
+		width: 368px;
+		padding: 20px;
+		float: left;
+	}
+	.carousel-caption {
+		font-size: 40px;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		top: 10% !important;
+		bottom: 16% !important;
+	}
+}
+
+@media (max-width: 987px) {
+	#about-me, #projects, #skiing, #contact-me, .vid-carousel, .skiing-wrapper {
+		max-width: 880px;
+		margin-left: 6px;
+		margin-right: 6px;
+	}
+	#about-me-container {
+		margin: 0 auto auto auto;
+	}
+	#about-me-image {
+		padding: 18px 0px;
+	}
+	#about-me-image img {
+		width: 100%;
+		height: auto;
+	}
+	#about-me-text {
+		margin: auto;
+	}
+	.carousel-caption {
+		font-size: 4vw;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		top: 30% !important;
+		bottom: 30% !important;
+	}
+}
+
+input[type=text], input[type=email] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color: #eee;
+	border-color: #eee;
+	font-family: 'Baloo Tamma 2',cursive;
+}
+
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color: #eee;
+	border-color: #eee;
+	height: 200px;
+	font-family: 'Baloo Tamma 2', cursive;
+}
+
+button {
+	margin: auto;
+	background-color: #4caf50;
+	color: #fff;
+	padding: 9px 18px;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	font-family:'Baloo Tamma 2', cursive;
+}
+
+input[type=submit]:hover {
+	background-color: green;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+
+
+
+
+
+
